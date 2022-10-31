@@ -4,15 +4,23 @@ Name: TONG Shanshan,
 Email. tongshanshan117@gmail.com
 
 b.	Overview of the submitted folder and the folder structure.
+>Data
+>src
+ download.py
+ process-data.py
+ model.py
+>eda.ipynb
+>README.md
+>requirements.txt
+>run.sh
 
-
-c.	 Instructions for executing the pipeline and modifying any parameters.
-
-
+c.	 Instructions for executing the pipeline and modifying any parameters
+click the ‘run.sh’ file to run the .py files
 
 d.	Description of logical steps/flow of the pipeline. If you find it useful, please feel free to include suitable visualization aids (eg, flow charts) within the README.
-click the ‘run.sh’ file to run the .py files
-In case the run.sh file doesn’t run, I put all the codes in src.ipynb under the same folder. 
+ download.py : download the database
+ process-data.py : preprocess the data including data cleaning, feature engineering, data standardization 
+ model.py: train and test the models
 
 e.	Overview of key findings from the EDA conducted in Task 1 and the choices made in the pipeline based on these findings, particularly any feature engineering. Please keep the details of the EDA in the `.ipynb`. The information in the `README.md` should be a quick summary of the details from `.ipynb`.
 The key findings from the EDA include:
@@ -36,3 +44,4 @@ LightGBM	0.84	0.93	0.89	0.39	0.20	0.22	0.80
 SGDClassifier	0.84	0.93	0.89	0.39	0.20	0.27	0.80
 
 h.	Other considerations for deploying the models developed.
+in the future, i will create a m/flow and deploy it
